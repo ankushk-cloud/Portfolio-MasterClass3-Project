@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website showcasing projects, skills and contact information">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Portfoilio | Web developer</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav id="main-nav">
+            <div class="nav-brand">
+                <a href="#hero">YourName</a>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#hero">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Hamburger -->
+            <button id="hamburger" type="button" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <button id="dark-mode-toggle" type="button">
+                Dark mode
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm  <span class="highlight">[Your Name]</span></h1>
+            <p class="hero-tagline">A passionate web developer who turns ideas into elegant, interactive experiences on the web.</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About section -->
+     <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <!-- bio paragraph -->
+             <div class="about-bio">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quibusdam, itaque odit sed omnis sit inventore accusamus architecto, sint sapiente aliquam numquam. Repellat nam ab, eius consequuntur quas natus in ipsa, est deleniti deserunt aspernatur.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro saepe possimus quas aperiam tempore deleniti earum ipsa non aut quaerat. 
+                </p>
+             </div>
+             <div class="about-skills">
+                <h3>My skills</h3>
+                <ul class="skills-list">
+                    <li>HTML5 & Semantic Markup</li>
+                    <li>CSS3 & Flexbox</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>Responsive Web Design</li>
+                    <li>Version Control with Git & Github</li>
+                    <li>MySQL</li>
+                </ul>
+             </div>
+        </div>
+     </section>
+
+     <!-- Project Section -->
+      <section id="projects">
+        <h2>My projects</h2>
+        <p class="section-subtitles">
+            A selection of work I've built during this masterclass and beyond.
+        </p>
+        <div class="projects-gallery" id="projects-gallery">
+            <!-- card 1 -->
+            <article class="project-card">
+                <div class="project-image-placeholder">
+                    [Project Screenshot]
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">
+                        Project One
+                    </h3>
+                    <p class="project-description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quasi iure vitae similique? Ducimus, sequi.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="btn-live">Live-Demo</a>
+                        <a href="#" class="btn-code">View code</a>
+                    </div>
+                </div>
+            </article>
+            <!-- card 2 -->
+            <article class="project-card">
+                <div class="project-image-placeholder">
+                    [Project Screenshot]
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">
+                        Project Two
+                    </h3>
+                    <p class="project-description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quasi iure vitae similique? Ducimus, sequi.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="btn-live">Live-Demo</a>
+                        <a href="#" class="btn-code">View code</a>
+                    </div>
+                </div>
+            </article>
+            <!-- Card 3 -->
+             <article class="project-card">
+                <div class="project-image-placeholder">
+                    [Project Screenshot]
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">
+                        Project Three
+                    </h3>
+                    <p class="project-description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas quasi iure vitae similique? Ducimus, sequi.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="btn-live">Live-Demo</a>
+                        <a href="#" class="btn-code">View code</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+      </section>
+
+      <!-- contact section -->
+       <section id="contact">
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">
+            Have a project in mind or just want to say hi? Fill in the form below and I'll get back to you soon.
+        </p>
+
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <span class="error-message" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                <span class="error-message" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your message</label>
+                <textarea name="message" id="message" rows="6" placeholder="Tell me about your project" required></textarea>
+                <span class="error-message" id="message-error"></span>
+            </div>
+            <button type="submit" id="submit-btn">Send message</button>
+        </form>
+       </section>
+
+       <!-- Footer -->
+        <footer id="main-footer">
+            <p>
+                &copy; 2026 <strong>[Your Name]</strong>. Built with HTML, CSS & JavaScript.
+            </p>
+            <p>
+                <a href="#">Github</a> | <a href="#">LinkedIn</a>
+            </p>
+        </footer>
+        <script src="./script.js"></script>
+</body>
+</html>
